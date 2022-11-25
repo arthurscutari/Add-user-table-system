@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranking System</title>
+    <link rel="stylesheet" href="/Css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Css/index.css">
+</head>
+
+<body>
+    <h1 class="title__page"> Ranking System</h1>
+    <div class="container__rankingSystem">
+        <section class="container__addUser">
+            <img src="/img/logo.png" alt="Image of logo" height="70px" width="80px" class="img__logo">
+            <div class="container_name">
+                <p class="p__subtitle">Player's Info</p>
+                <form class="container__nickname">
+                    <input type="text" id="nickNamePlayer" name="nickname" placeholder="Nickname"
+                        class="input__class width__input position__info" maxlength="16" required>
+                    <select name="select" id="select__server" class="input__class width__input position__info " placeholder="Server" required>
+                        <option class="option__select" value="" >Server</option>
+                        <option class="option__select">North America</option>
+                        <option class="option__select">South America</option>
+                        <option class="option__select">Europe</option>
+                        <option class="option__select">Chinese</option>
+                    </select>
+                </form>
+                <p class="p__subtitle">Player's Stats</p>
+                <form class="container__stats">
+                    <input type="text" id="gamePlayer" name="games" placeholder="Games" min="1" max="50"
+                        class="input__class width__input__other" maxlength="2" required>
+                    <input type="text" id="winGames" name="win" placeholder="Wins" min="0" max="50"
+                        class="input__class width__input__other" maxlength="2" required>
+                    <input type="text" id="killPlayer" name="kill" placeholder="Kills" min="0" max="50"
+                        class="input__class width__input__other"maxlength="4" required>
+                    <input type="text" id="deathPlayer" name="death" placeholder="Death" min="0" max="50"
+                        class="input__class width__input__other" maxlength="4" required>
+                    <input type="text" id="assistPlayer" name="assist" placeholder="Assist" min="0" max="50"
+                        class="input__class width__input__other" maxlength="4" required>
+                </form>
+                <p class="p__subtitle">Player's Nature</p>
+                <form class="container__nature">
+                    <input type="text" id="honorPlayer" name="honor" placeholder="Honor" min="0" max="50"
+                        class="input__class width__input__other" maxlength="2" required>
+                    <input type="text" id="reportPlayer" name="report" placeholder="Report" min="0" max="50"
+                        class="input__class width__input__other" maxlength="2" required>
+                </form>
+                <input type="submit" class="button__send" value="send">
+            </div>
+
+        </section>
+        <section class="container__ranking">
+            <table class="container__table">
+                <th>Nickname</th>
+                <th>Win rate</th>
+                <th>K.D.A</th>
+                <th>Server</th> 
+                <th>Rated</th>
+            </table>
+        </section>
+        <section class="container__editUser">
+            <img src="/img/avatar.png" alt="Image of logo" height="80px" width="80px" class="img__logo">
+            <div class="container_name">
+                <p class="p__subtitle">Search player</p>
+                <div class="container__nickname">
+                    <input type="text" id="nameSearch" name="search" placeholder="Nickname"
+                        class="input__class width__input position__info" maxlength="16">
+                <input type="submit" id="button__add "class="button__send button__search" value="search">
+        </section>
+    </div>
+    <script src="/Js/addUser.js"></script>
+   
+
+</html>

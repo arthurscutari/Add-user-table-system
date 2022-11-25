@@ -1,0 +1,88 @@
+.container__addUser{
+    height: 70vh;
+    width: 30vw;
+    background-color: #34495e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.container__nickname{
+    display: flex;
+    flex-direction: column;
+}
+.p__subtitle{
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 20px 0;
+    text-align: center;
+}
+.input__class{
+
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #f1c40f;
+    text-align: center;
+    box-sizing: border-box;
+    color: white;
+}
+
+.width__input{
+    width: 300px;
+    height: 30px;
+    box-sizing: border-box;
+}
+.width__input__other{
+
+    width: 50px;
+    height: 30px;
+}
+.button__send{
+    background-color: #2ecc71;
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 500;
+    width: 300px;
+    height: 30px;
+    border: none;
+    text-transform: uppercase;
+    margin: 30px 0;
+    border-radius: 10px;
+
+}
+.container__stats{
+    display: flex;
+    justify-content: space-between;
+}
+.container__nature{
+    display: flex;
+    justify-content: space-around;
+}
+::placeholder{
+    color: rgba(255, 255, 255, 0.246);
+}
+#select__server{
+    padding: 0 5px;
+    color:white;
+    text-align: center;
+    appearance: none;
+}
+
+.option__select{
+    background-color: #34495e;
+    color: white;
+}
+.option__select:checked{
+    color: #f1c40f;
+}
+
+td{
+    text-align: center;
+    color: white;
+    padding: 3px;
+    font-family: 'Poppins';
+    font-size: 14px;
+}

@@ -1,0 +1,13 @@
+.container__editUser{
+
+    height: 70vh;
+    width: 30vw;
+    background-color: #34495e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.button__search{
+    background-color: #f39c12;
+}
