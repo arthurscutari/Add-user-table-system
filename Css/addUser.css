@@ -51,6 +51,7 @@
     text-transform: uppercase;
     margin: 30px 0;
     border-radius: 10px;
+    cursor: pointer;
 
 }
 .container__stats{

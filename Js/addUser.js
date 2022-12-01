@@ -16,6 +16,11 @@ function validation (){
 
     var nickName = document.querySelector("#nickNamePlayer").value;
     var server = document.querySelector("#select__server").value;
+    var games = document.querySelector("#gamePlayer").value;
+    var wins = document.querySelector("#winGames").value;
+    var kills = document.querySelector("#killPlayer").value;
+    var deaths = document.querySelector("#deathPlayer").value;
+    var assist = document.querySelector("#assistPlayer").value;
 
     if (!nickName) {
        
@@ -28,6 +33,10 @@ function validation (){
         alert("Selecione um servidor");
 
         return false;
+    }else if (!games){
+        
+        alert("Selecione um servidor");
+
     }
     
     return true;
@@ -41,6 +50,7 @@ function createTable(){
     var kdaRanking = document.createElement("td");
     var serverRanking = document.createElement("td");
     var ratedRanking = document.createElement("td");
+    
 
    
     rankingTable.appendChild(nickNameRanking);
