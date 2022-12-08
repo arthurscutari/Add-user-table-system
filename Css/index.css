@@ -1,6 +1,6 @@
-@import url(https://arthurscutari.github.io/Add-user-table-system/Css/addUser.css);
-@import url(https://arthurscutari.github.io/Add-user-table-system/Css/ranking.css);
-@import url(https://arthurscutari.github.io/Add-user-table-system/Css/editUser.css);
+@import url(/Css/addUser.css);
+@import url(/Css/ranking.css);
+@import url(/Css/editUser.css);
 body{
 
     height: 100vh;

@@ -7,7 +7,9 @@ function mainFunction(){
     
     if (validation()){
         createTable();
-        winRate();
+        winRate()
+        calculateKda()
+        playerNature();
     }
    
 }
@@ -21,21 +23,52 @@ function validation (){
     var kills = document.querySelector("#killPlayer").value;
     var deaths = document.querySelector("#deathPlayer").value;
     var assist = document.querySelector("#assistPlayer").value;
+    var honor = document.querySelector("#honorPlayer").value;
+    var report = document.querySelector("#reportPlayer").value;
 
     if (!nickName) {
        
-        alert("Digite seu apelido.");
+        alert("Enter your nickname.");
 
         return false;
 
     }else if(!server){
 
-        alert("Selecione um servidor");
+        alert("Select your server.");
 
         return false;
     }else if (!games){
         
-        alert("Selecione um servidor");
+        alert("Enter the amount of games.");
+
+        return false;
+
+    }else if (!wins){
+        
+        alert("Enter the amount of wins.");
+
+        return false;
+
+    }else if (!kills){
+        
+        alert("Enter the amount of kills");
+
+        return false;
+
+    }else if (!deaths){
+        
+        alert("Enter the amount of deaths");
+        return false;
+
+    }else if (!assist){
+        
+        alert("Enter the amount of assist");
+        return false;
+
+    }else if (!honor){
+        
+        alert("Enter the amount of honors");
+        return false;
 
     }
     
@@ -84,7 +117,7 @@ function calculateKda(){
     var deaths = document.querySelector("#deathPlayer").value;
     var assist = document.querySelector("#assistPlayer").value;
 
-    var kda = (((kills + assist)/deaths));
+    var kda = (((kills + assist)/deaths)/100);
     return kda.toFixed(1);
 }
 
